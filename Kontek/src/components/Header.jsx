@@ -2,7 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import CountUp from 'react-countup';
 import { Link } from "react-scroll";
-import selfImage from "../../public/selfImage.jpg"
+import selfImage from "../../public/selfImage.png"
 
 import { BsFillTelephoneFill, BsFacebook, BsGithub } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
@@ -18,57 +18,69 @@ const Header = () => {
         gsap.registerPlugin(ScrollTrigger)
 
         gsap.fromTo('.selfImage', { x: '200px', opacity: 0 }, { x: 0, opacity: 1, duration: .5 })
-        gsap.fromTo('.name', { y: '100px', opacity: 0 }, { y: 0, opacity: 1, duration: .5 })
+        gsap.fromTo('.name', { y: '100px', opacity: 0 }, { y: 0, opacity: 1, duration: .5, stagger:.2, delay:.3 })
+        gsap.fromTo('.headerBorder', {width:0}, {width:'40%', duration:.5, delay:.9})
+        gsap.fromTo('.headerTag', { y: '100px', opacity: 0 }, { y: 0, opacity: 1, duration: .5, delay:1.3 })
+        gsap.fromTo('.buttonWrapper', { y: '50px', opacity: 0 }, { y: 0, opacity: 1, duration: .5, stagger:.2 })
+        gsap.fromTo('.socials', { x: '-100px', opacity: 0 }, { x: 0, opacity: 1, duration: .5 })
 
         const tl = new TimelineMax({repeat:-1})
 
         let border = document.querySelectorAll('.border')
 
-        // tl.to(border, {x:'0%'})
-        // .to(border, {x:'-20%', duration:2, stagger:1})
-        // .to(border, {x:'0%', duration:2, stagger:1})
-        // .to(border, {x:'20%', duration:2, stagger:1})
-        // .to(border, {x:'0%', duration:2, stagger:1})
 
         gsap.fromTo(border, {x:'-20%'}, {x:'20%', duration:3, stagger:1, yoyo:true, repeat:-1})
     })
 
     return (
-        <div id='home' className="header min-h-screen lg:grid grid-cols-2 mx-auto mt-[120px] lg:mt-0">
-            <div className="relative ml-[10%] align-center lg:top-[50%] my-10 lg:translate-y-[-25%] mx-auto space-y-3 text-center lg:text-start">
-            <div className="w-full">
-                    <TypeAnimation
-                        sequence={[
-                            'Programista',
-                            2000,
-                            'Front-end developer',
-                            2000
-                        ]}
-                        speed={50}
-                        repeat={Infinity}
-                        className="text-center font-montserrat text-xl font-[600] tracking-tight bg-gradient-to-r from-[#7e7e7e] to-[#222] inline-block text-transparent bg-clip-text"/>
-                </div>
-                <h1 className="name text-[45px] sm:text-[60px] lg:text-[70px] font-inter font-[600] uppercase">Jakub Kontek</h1>
+        <div className=" w-full min-h-screen relative">
+            <div className="w-full opacity-35 h-full absolute bg-no-repeat bg-cover bg-[url('https://img.freepik.com/free-vector/abstract-3d-perspective-indoor-wireframe-vector-design_1017-39916.jpg?w=1480&t=st=1721340069~exp=1721340669~hmac=92b75fdf85fd2ddcebeff1d58d6dd249ff16a456a98f1f0522571d755edaf98e')]"></div>
+            <div id='home' className="header min-h-screen lg:grid grid-cols-2 mx-auto mt-[120px] max-w-[1500px] lg:mt-0 bg-no-repeat bg-cover relative">
+            <div className="">
+            <div className="relative px-10 lg:px-0 lg:ml-[10%] align-center lg:top-[50%] my-10 lg:translate-y-[-50%] mx-auto text-center lg:text-start">
 
-                        <p className=" font-montserrat text-xl font-[500]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam corporis quasi autem omnis laudantium, blanditiis alias quidem nemo ut debitis. Odio mollitia officiis dolorem. </p>
-                
-                <div className="ml-[15%] md:ml-0">
-                    <div className="flex space-x-[10px] my-6">
-                        <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] text-[#000000] hover:text-[#b1683b] transition-all duration-300" /></a>
-                        <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] text-[#000000] hover:text-[#b1683b] transition-all duration-300" /></a>
-                        <a href="https://www.linkedin.com/in/jakub-kontek-33909b2a1/"><FaLinkedinIn className="text-[30px] text-[#000000] hover:text-[#b1683b] transition-all duration-300" /></a>
+                <h2 className='name font-montserrat text-xl font-[600] tracking-tight
+                                    bg-gradient-to-r from-[rgb(255,149,73)] to-[rgb(208,89,91)]
+                                    inline-block text-transparent bg-clip-text'>FREELANCER</h2>
+                <h1 className="name text-5xl lg:text-6xl xl:text-7xl font-inter tracking-tighter font-[600] uppercase m-0 w-full">Jakub Kontek</h1>
+
+                <div className="flex mb-5 gap-2 mx-auto justify-center lg:justify-start">
+                    <div className="headerBorder w-2/5">
+                        <div className="w-full h-[2px] bg-[rgb(156,96,203)] relative top-[50%] translate-y-[-50%]"></div>
+                    </div>
+                    <p className="headerTag font-montserrat font-[700] bg-gradient-to-r from-[rgb(156,96,203)] via-[rgb(208,89,91)] to-[rgb(212,130,71)]
+                                                                inline-block text-transparent bg-clip-text">WEB DESIGNER</p>
+                </div>
+
+                        <p className="name font-montserrat text-lg font-[600] w-full sm:w-2/3 mx-auto lg:w-full text-justify">Specjalizuję się w tworzeniu stron internetwocyh,
+                            przyciągających uwagę rolek na Instagramie, ulepszaniu SEO i prowadzeniu kampanii w mediach społecznościowych dla marek. Ożywmy Twoją markę!
+                        </p>
+
+                <div className="flex gap-4 mt-5 justify-center lg:justify-start">
+                    <div className="buttonWrapper">
+                        <Link to="about" spy={true} smooth={true}><button className=" bg-[rgb(255,149,73)] border-[1px] border-transparent text-black font-[500] px-2 py-3 rounded-xl text-lg font-inter transition-all duration-200 hover:tracking-wider">SPRAWDŹ WIĘCEJ</button></Link>
+                    </div>
+                    <div className="buttonWrapper">
+                        <Link to="contact" spy={true} smooth={true}><button className=" bg-transparent border-[1px] border-[#111] text-black px-2 py-3 rounded-xl text-lg font-inter font-[500] hover:bg-[#111] hover:text-white transition-all duration-200 hover:font-[300] hover:tracking-wider">SKONTAKTUJ SIĘ</button></Link>
                     </div>
                 </div>
-               <div className=" sm:flex">
-                    <Link to="about" spy={true} smooth={true}><button className=" m-2 bg-[#b1683b] border-[1px] border-[#b1683b] text-white px-4 py-2 rounded-full text-xl font-inter font-[200] hover:bg-[#8b5636] hover:text-white transition-all duration-200 hover:tracking-wider">SPRAWDŹ WIĘCEJ</button></Link>
-                    <Link to="contact" spy={true} smooth={true}><button className=" m-2 bg-transparent border-[1px] border-[#111] text-black px-4 py-2 rounded-full text-xl font-inter font-[500] hover:bg-[#111] hover:text-white transition-all duration-200 hover:font-[300] hover:tracking-wider">SKONTAKTUJ SIĘ</button></Link>
-               </div>
+
+                <div className="ml-[15%] md:ml-0">
+                    <div className="flex space-x-[10px] my-6 justify-center lg:justify-start socials">
+                        <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] text-[#000000] hover:text-[rgb(212,130,71)] transition-all duration-300" /></a>
+                        <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] text-[#000000] hover:text-[rgb(212,130,71)] transition-all duration-300" /></a>
+                        <a href="https://www.linkedin.com/in/jakub-kontek-33909b2a1/"><FaLinkedinIn className="text-[30px] text-[#000000] hover:text-[rgb(212,130,71)] transition-all duration-300" /></a>
+                    </div>
+                </div>
+
+                </div>
             </div>
             <div className=" my-auto mx-auto w-4/5 mt-[15%] sm:mt-auto space-y-2">
                 <div className="border w-1/3 h-[4px] bg-black mx-auto"></div>
-                <img src={selfImage} className=" selfImage" alt="image" />
+                <img src={selfImage} className=" selfImage aspect-[9/10] object-cover" alt="image" />
                 <div className="border w-1/3 h-[4px] bg-black mx-auto"></div>
             </div>
+        </div>
         </div>
     )
 }

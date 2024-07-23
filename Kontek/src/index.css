@@ -17,32 +17,33 @@
 body {
   margin: auto;
   overflow-x: hidden;
-  /* background: url("https://images.unsplash.com/photo-1611361513918-eee28c9d96a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHtxwdXJwbGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
-  /* background: url('https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
-  background: linear-gradient(80deg, #ffffff, rgb(223, 223, 223), rgb(230, 230, 230)), rgb(255, 255, 255);
+  background: linear-gradient(80deg, #ffffff, rgb(247, 247, 247), rgb(248, 248, 248)), rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position-y: 200%; */
 }
 
-/* @keyframes text {
-  0% {
-    -webkit-text-stroke: 2px black;
-    color: transparent;
-    text-shadow: 0px 0px 30px #25160d;
-  }
+ .toggledIcon .line1{
+  transform: rotate(45deg);
+  position: relative;
+   top: 7px;
+}
 
-  50% {
-    color: black;
-    text-shadow: 0px 0px 10px #25160d;
-  }
+.toggledIcon .line2{
+  display: none;
+}
 
-  100% {
-    -webkit-text-stroke: 2px black;
-    color: transparent;
-    text-shadow: 0px 0px 30px #25160d;
-  }
-} */
+.toggledIcon .line3{
+  transform: rotate(-45deg);
+}
+
+.toggledIcon:hover .line1, .toggledIcon:hover .line3{
+  background: red;
+}
+
+.navbarActive{
+  top:0;
+}
 
 @keyframes text2 {
   0% {
@@ -70,17 +71,17 @@ body {
   }
 
   100% {
-    box-shadow: 0px 0px 3ch gray;
+    box-shadow: 0px 0px 30px gray;
   }
 }
 
 
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -108,7 +109,7 @@ body {
 }
 
 .navElement .active {
-  color: #966a43;
+  color: rgb(255,149,73);
   border-bottom: 1px solid black;
 }
 
@@ -175,7 +176,7 @@ background: #dedede;
 }
 
 .react-multi-carousel-dot--active button{
-  border-color:#c25816;
+  border-color:rgb(255,38,42);
   width: 30px;
   transition: .5s;
   border-width: 1.5px;
@@ -206,5 +207,9 @@ background: #dedede;
     width: 40px;
     height: 40px;
   }
+}
+
+.aboutContent{
+  background: radial-gradient(rgba(255,131,42,.5), transparent, transparent, transparent);
 }
 

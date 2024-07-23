@@ -1,14 +1,11 @@
 import React from "react";
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
-import { IoPersonSharp, IoHome } from "react-icons/io5";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai"
-import { VscGraph } from "react-icons/vsc";
-import { RiContactsLine } from "react-icons/ri";
+import { CgMenuRight } from "react-icons/cg";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
 
@@ -38,29 +35,51 @@ const Navbar = () => {
         },
     ]
 
-    return (
-       <div className="bg-white z-[99] py-2 px-8 h-[65px] fixed top-0 w-full">
-            <div className=" max-w-[1500px] px-6 mx-auto flex justify-between">
-                
-                    <Link to="home" spy={true} smooth={true} >
-                        <div className="cursor-pointer">
-                        <h1 className=" font-montserrat font-[600] text-lg">JAKUB KONTEK</h1>
-                        <h2 className=" font-montserrat font-[600] text-[9px]">WEB DEVELOPER & DESIGNER</h2>
-                        </div>
-                    </Link>
+        const [active, setActive] = useState("nav__menu");
+        const [icon, setIcon] = useState("nav__toggler");
+        const navToggle = () => {
+            if (active === "navbarMenu") {
+            setActive("navbarMenu navbarActive");
+            } else setActive("navbarMenu");
 
-                <ul className="flex relative top-3 gap-4 justify-end">
-                    {navElements.map((element, i) => {
-                        return (
-                            <li className="navElement text-black cursor-pointer rounded-full text-md group  transition-all duration-200">
-                                <Link key={i} to={element.link} spy={true} smooth={true} className=" font-gruppo font-bold">
-                                    <p className="">{element.name}</p>
-                                </Link>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
+            // Icon Toggler
+            if (icon === "navbarToggler") {
+            setIcon("navbarToggler toggledIcon");
+            } else setIcon("navbarToggler");
+        };
+
+    return (
+       <div className=" relative mx-auto">
+
+            <div className=" bg-white py-2 h-[65px] z-[99] fixed top-0 w-full">
+                <div className=" relative sm:left-8 text-center sm:text-start w-fit mx-auto sm:mx-0">
+                    
+                        <Link to="home" spy={true} smooth={true} >
+                            <div className="cursor-pointer">
+                            <h1 className=" font-montserrat font-[600] text-lg">JAKUB KONTEK</h1>
+                            <h2 className=" font-montserrat font-[600] text-[9px] text-[rgb(252,96,99)]">WEB DEVELOPER & DESIGNER</h2>
+                            </div>
+                        </Link>
+                </div>
+        </div>
+
+        <div className={` fixed top-5 right-8 z-[99] text-2xl space-y-[4px] cursor-pointer group sm:hidden ${icon}`} onClick={navToggle}>
+            <div className="line1 w-7 h-[3px] bg-black transition-all duration-200"></div>
+            <div className="line2 w-7 h-[3px] bg-black transition-all duration-200"></div>
+            <div className="line3 w-7 h-[3px] bg-black transition-all duration-200 "></div>
+        </div>
+
+       <ul className={`${active} sm:flex fixed top-[-300px] pt-[65px] sm:top-5 py-6 sm:py-0 sm:right-8 gap-4 space-y-2 z-[98] sm:z-[99] sm:space-y-0 transition-all duration-500 justify-end bg-[#fdfdfd] w-full sm:bg-transparent`}>
+                        {navElements.map((element, i) => {
+                            return (
+                                <li className="navElement text-black cursor-pointer rounded-full text-md group text-center transition-all duration-150 hover:text-[rgb(255,149,73)]">
+                                    <Link key={i} to={element.link} spy={true} smooth={true} ma className=" font-gruppo font-bold">
+                                        <p className="">{element.name}</p>
+                                    </Link>
+                                </li>
+                            )
+                        })}
+                    </ul>
        </div>
     )
 }
