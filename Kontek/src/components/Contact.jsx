@@ -43,6 +43,7 @@ const Contact = ({option, setOption, price, setPrice}) => {
         setEmail('')
         setMessage('') 
         setOption('')
+        setPrice('')
 
       } catch (error){
         console.error(error)
