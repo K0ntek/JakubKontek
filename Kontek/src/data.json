@@ -1,0 +1,114 @@
+[
+    {
+        "id":1,
+         "offer": "Strona internetowa z formularzem kontaktowym",
+         "price": "1500",
+        "subheading": "Web design",
+        "month": "",
+        "slash": "",
+        "pros": [
+            {
+                 
+                 "prosElement": "Estetyczny wygląd"
+            },
+            {
+                 
+                 "prosElement": "Indywidualne podejście"
+            },
+            {
+                 
+                 "prosElement": "Personalizacja"
+            },
+            {
+                 
+                 "prosElement": "Interakcje społecznościowe"
+            }
+            
+        ]
+    },
+
+    {
+        "id":2,
+         "offer": "Prowadzenie Twoich social media",
+         "price": 600,
+        "subheading": "Marketing",
+        "month": "miesiąc",
+        "slash": "/",
+        "pros": [
+            {
+                 
+                 "prosElement": "Facebook"
+            },
+            {
+                 
+                 "prosElement": "Elastyczność "
+            },
+            {
+                 
+                 "prosElement": "10 postów miesięcznie"
+            }
+        ]
+    },
+
+    {
+        "id":3,
+         "offer": " Strona internetowa + prowadzenie Twoich social media",
+         "price": 1850,
+        "subheading": "Super oferta",
+        "month": "",
+        "slash": "",
+        "pros": [
+            {
+                 
+                 "prosElement": "Strona internetowa - 1400PLN"
+            },
+            {
+                 
+                 "prosElement": "Social media - 450PLN miesięcznie"
+            }
+        ]
+        },
+
+    {     
+        "id":4,
+         "offer": "Stworzenie rolki na Instagrama / Tiktoka",
+         "price": 150,
+        "subheading": "Marketing",
+        "month": "rolka",
+        "slash": "/",
+        "pros": [
+            {  
+                 "prosElement": "Prowadzenie twojego kanału"
+            },
+            {   
+                 "prosElement": "Promowanie produktu"
+            },
+            {
+                 "prosElement": "Promowanie usługi"
+            }
+        ]
+      },
+
+      {
+        "id":5,
+         "offer": "Film promocyjny",
+         "price": 1500,
+        "subheading": "Marketing",
+        "month": "",
+        "slash": "",
+        "pros": [
+            {
+                 "prosElement": "Unikatowa reklama"
+            },
+            {
+                 "prosElement": "Indywidualne podejście"
+            },
+            {
+                 "prosElement": "Promowanie produktu"
+            },
+            {
+                 "prosElement": "Promowanie usługi"
+            }
+        ]
+      }
+]

@@ -38,7 +38,7 @@ const Footer = () => {
             link: 'projects'
         },
         {
-            name: 'contact',
+            name: 'kontakt',
             link: 'contact'
         },
     ]
@@ -56,10 +56,10 @@ const Footer = () => {
             <div className=''>
                 <div className='w-fit mx-auto'>
 
-                <div className=' gap-2 flex mx-auto justify-center relative top-1'>
+                <div className=' gap-4 flex flex-wrap mx-auto justify-center relative top-1'>
                     {navElements.map((element, i)=>{
                         return(
-                            <Link to={element.link} spy={true} smooth={true}><p className='cursor-pointer text-sm text-black font-[600] hover:text-[#c2703e] font-montserrat text-center transition-all duration-150'>{element.name}</p></Link>
+                            <Link key={i} to={element.link} spy={true} smooth={true}><p className='cursor-pointer text-sm text-black font-[600] hover:text-[#c2703e] font-montserrat text-center transition-all duration-150'>{element.name}</p></Link>
                         )
                     })}
                 </div>

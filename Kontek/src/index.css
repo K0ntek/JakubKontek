@@ -23,6 +23,7 @@ body {
   /* background-position-y: 200%; */
 }
 
+
  .toggledIcon .line1{
   transform: rotate(45deg);
   position: relative;
@@ -30,14 +31,14 @@ body {
 }
 
 .toggledIcon .line2{
-  display: none;
-}
-
-.toggledIcon .line3{
   transform: rotate(-45deg);
 }
 
-.toggledIcon:hover .line1, .toggledIcon:hover .line3{
+.toggledIcon .line3{
+  display: none;
+}
+
+.toggledIcon:hover .line1, .toggledIcon:hover .line2{
   background: red;
 }
 
@@ -196,14 +197,14 @@ background: #dedede;
 @media only screen and (max-width: 500px) {
   .react-multiple-carousel__arrow--left {
     left: calc(100% - 100px);
-    top: -40px; 
+    top: -55px; 
     width: 40px;
     height: 40px;
   }
   
   .react-multiple-carousel__arrow--right {
     right: calc(0%);
-    top: -40px; 
+    top: -55px; 
     width: 40px;
     height: 40px;
   }

@@ -6,6 +6,7 @@ import { PiPuzzlePieceThin } from "react-icons/pi";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { GoGraph } from "react-icons/go";
 import AboutTriangles from "./AboutTriangles";
+import { Link } from "react-scroll";
 
 const About = () => {
 
@@ -28,11 +29,13 @@ const About = () => {
                             <p className=" text-justify sm:text-center font-montserrat text-xl font-[600] mt-5">Jestem freelancerem specjalizującym się w tworzeniu stron internetowych, zarządzaniu social media, produkcji filmików 
                                 na Instagrama oraz optymalizacji SEO. Projektuję nowoczesne, responsywne strony, które łączą estetykę z funkcjonalnością.</p>
 
-                            <p className=" text-justify sm:text-center font-montserrat text-xl font-[600] mt-5 px-3">Pomagam budować silną obecność online, tworząc angażujące treści i zarządzając kampaniami w mediach społecznościowych. Produkuję kreatywne filmiki
+                            <p className=" text-justify sm:text-center font-montserrat text-xl font-[600] mt-5 lg:px-3">Pomagam budować silną obecność online, tworząc angażujące treści i zarządzając kampaniami w mediach społecznościowych. Produkuję kreatywne filmiki
                                  na Instagrama, które przyciągają uwagę i zwiększają zaangażowanie. </p>
 
-                            <p className=" text-justify sm:text-center font-montserrat text-xl font-[600] mt-5 px-5">Dzięki optymalizacji SEO podnoszę pozycje stron w wynikach wyszukiwania, co przekłada się na większy ruch i konwersje. Szukasz wsparcia w rozwijaniu swojej obecności online?</p>
+                            <p className=" text-justify sm:text-center font-montserrat text-xl font-[600] mt-5 lg:px-5">Dzięki optymalizacji SEO podnoszę pozycje stron w wynikach wyszukiwania, co przekłada się na większy ruch i konwersje. Szukasz wsparcia w rozwijaniu swojej obecności online?</p>
+                            <Link to="contact" smooth={true} spy={true}>
                             <button className=" font-montserrat font-[600] px-2 py-3  bg-gradient-to-r from-[rgb(255,131,42)] to-[rgb(255,88,91)] text-white mt-5 rounded-xl hover:tracking-wider transition-all duration-150">NAPISZ DO MNIE !</button>
+                            </Link>
                         </div>
                     </div>
 

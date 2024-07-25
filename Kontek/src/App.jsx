@@ -9,8 +9,12 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Pricing from './components/Pricing'
 import AboutTriangles from './components/AboutTriangles'
+import pricingOffer from './data.json'
 
 function App() {
+
+  const [option, setOption] = useState('')
+  const [price, setPrice] = useState('')
 
   return (
     <div>
@@ -19,12 +23,12 @@ function App() {
       <Header/>
       <div className="max-w-[1800px] px-3 sm:px-10 mx-auto">
       <About/>
-      <Pricing/>
+      <Pricing setOption={setOption} setPrice={setPrice}/>
 
       <div>
       <div className=" aboutContent max-w-[1100px] h-fit mx-auto text-center relative px-2 sm:px-6 my-10">
                         <AboutTriangles/>
-                        <div className="mw-full px-10 mx-auto">
+                        <div className="mw-full sm:px-10 mx-auto">
                         <div>
                             <h2 className=' font-montserrat text-xl font-[600] tracking-tight bg-gradient-to-r from-[rgb(255,149,73)] to-[rgb(208,89,91)] inline-block text-transparent bg-clip-text'>CO ZYSKUJESZ</h2>
                         </div>
@@ -52,7 +56,7 @@ function App() {
       </div>
 
       <Projects/>
-      <Contact/>
+      <Contact option={option} price={price}/>
       </div>
       <Footer/>
     </div>

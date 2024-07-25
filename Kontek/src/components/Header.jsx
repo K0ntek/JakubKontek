@@ -58,7 +58,7 @@ const Header = () => {
 
                 <div className="flex gap-4 mt-5 justify-center lg:justify-start">
                     <div className="buttonWrapper">
-                        <Link to="about" spy={true} smooth={true}><button className=" bg-[rgb(255,149,73)] border-[1px] border-transparent text-black font-[500] px-2 py-3 rounded-xl text-lg font-inter transition-all duration-200 hover:tracking-wider">SPRAWDŹ WIĘCEJ</button></Link>
+                        <Link to="about" spy={true} smooth={true}><button className=" bg-gradient-to-tr from-[rgb(255,161,94)] to-[rgb(255,106,0)] border-[1px] border-transparent text-black font-[500] px-2 py-3 rounded-xl text-lg font-inter transition-all duration-200 hover:tracking-wider">SPRAWDŹ WIĘCEJ</button></Link>
                     </div>
                     <div className="buttonWrapper">
                         <Link to="contact" spy={true} smooth={true}><button className=" bg-transparent border-[1px] border-[#111] text-black px-2 py-3 rounded-xl text-lg font-inter font-[500] hover:bg-[#111] hover:text-white transition-all duration-200 hover:font-[300] hover:tracking-wider">SKONTAKTUJ SIĘ</button></Link>
