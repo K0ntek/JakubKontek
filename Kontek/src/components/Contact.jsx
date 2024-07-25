@@ -7,7 +7,7 @@ import { TiPin } from "react-icons/ti";
 import { FaClock } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 
-const Contact = ({option, price}) => {
+const Contact = ({option, setOption, price, setPrice}) => {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
