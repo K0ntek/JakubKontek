@@ -56,7 +56,7 @@ function App() {
       </div>
 
       <Projects/>
-      <Contact option={option} price={price}/>
+      <Contact option={option} setOption={setOption} price={price} setPrice={setPrice}/>
       </div>
       <Footer/>
     </div>
