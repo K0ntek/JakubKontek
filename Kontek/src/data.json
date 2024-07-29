@@ -30,9 +30,9 @@
     {
         "id":2,
          "offer": "Prowadzenie Twoich social media",
-         "price": 600,
+         "price": 60,
         "subheading": "Marketing",
-        "month": "miesiąc",
+        "month": "post",
         "slash": "/",
         "pros": [
             {
@@ -41,30 +41,38 @@
             },
             {
                  
+               "prosElement": "Instagram"
+            },
+            {
+                 
                  "prosElement": "Elastyczność "
             },
             {
                  
                  "prosElement": "10 postów miesięcznie"
-            }
+            },
+            {
+                 
+               "prosElement": " od 15 postów miesięcznie - 55pln"
+          }
         ]
     },
 
     {
         "id":3,
          "offer": " Strona internetowa + prowadzenie Twoich social media",
-         "price": 1850,
+         "price": "od 1450",
         "subheading": "Super oferta",
         "month": "",
         "slash": "",
         "pros": [
             {
                  
-                 "prosElement": "Strona internetowa - 1400PLN"
+                 "prosElement": "Strona internetowa - 1400pln"
             },
             {
                  
-                 "prosElement": "Social media - 450PLN miesięcznie"
+                 "prosElement": "Social media - 50pln od postu"
             }
         ]
         },
