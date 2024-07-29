@@ -5,7 +5,7 @@ import gsap from 'gsap';
 const AboutTriangles = () => {
 
     useEffect(()=>{
-        gsap.fromTo('.triangle', {y: 20}, {y: 0, duration:2, yoyo:true, repeat:-1, ease: 'power2', delay:.2})
+        gsap.fromTo('.triangle', {y: 20}, {y: 0, duration:2, yoyo:true, repeat:-1, stagger:.1})
     })
 
   return (

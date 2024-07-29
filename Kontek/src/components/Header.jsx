@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import CountUp from 'react-countup';
 import { Link } from "react-scroll";
 import selfImage from "../../public/selfImage.png"
+import { socials } from "./Contact";
 
 import { BsFillTelephoneFill, BsFacebook, BsGithub } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
@@ -34,8 +35,8 @@ const Header = () => {
 
     return (
         <div className=" w-full min-h-screen relative">
-            <div className="w-full opacity-35 h-full absolute bg-no-repeat bg-cover bg-[url('https://img.freepik.com/free-vector/abstract-3d-perspective-indoor-wireframe-vector-design_1017-39916.jpg?w=1480&t=st=1721340069~exp=1721340669~hmac=92b75fdf85fd2ddcebeff1d58d6dd249ff16a456a98f1f0522571d755edaf98e')]"></div>
-            <div id='home' className="header min-h-screen lg:grid grid-cols-2 mx-auto mt-[120px] max-w-[1500px] lg:mt-0 bg-no-repeat bg-cover relative">
+            <div className="w-full opacity-35 h-full absolute" style={{background: 'linear-gradient(180deg, transparent, transparent, white),url("https://img.freepik.com/free-vector/abstract-3d-perspective-indoor-wireframe-vector-design_1017-39916.jpg?w=1480&t=st=1721340069~exp=1721340669~hmac=92b75fdf85fd2ddcebeff1d58d6dd249ff16a456a98f1f0522571d755edaf98e")', backgroundPositionX:'50%',  backgroundRepeat:'no-repeat', backgroundSize:'cover'}}></div>
+            <div id='home' className="header min-h-screen lg:grid grid-cols-2 mx-auto pt-[120px] max-w-[1500px] lg:pt-0 bg-no-repeat bg-cover relative">
             <div className="">
             <div className="relative px-10 lg:px-0 lg:ml-[10%] align-center lg:top-[50%] my-10 lg:translate-y-[-50%] mx-auto text-center lg:text-start">
 
@@ -65,17 +66,19 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="ml-[15%] md:ml-0">
-                    <div className="flex space-x-[10px] my-6 justify-center lg:justify-start socials">
-                        <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] text-[#000000] hover:text-[rgb(212,130,71)] transition-all duration-300" /></a>
-                        <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] text-[#000000] hover:text-[rgb(212,130,71)] transition-all duration-300" /></a>
-                        <a href="https://www.linkedin.com/in/jakub-kontek-33909b2a1/"><FaLinkedinIn className="text-[30px] text-[#000000] hover:text-[rgb(212,130,71)] transition-all duration-300" /></a>
-                    </div>
+                <div className="flex gap-3 my-6 justify-center lg:justify-start lg:ml-10">
+                    {socials.map((socialElement, i)=>{
+                      return(
+                        <div key={i}>
+                          <a href={socialElement.link}  className=' text-3xl text-black hover:text-[rgb(212,130,71)] transition-all duration-150'> {socialElement.icon}</a>
+                        </div>
+                      )
+                    })}
                 </div>
 
                 </div>
             </div>
-            <div className=" my-auto mx-auto w-4/5 mt-[15%] sm:mt-auto space-y-2">
+            <div className=" my-auto mx-auto w-4/5 sm:w-3/5 lg:w-4/5 mt-[15%] sm:mt-auto space-y-2">
                 <div className="border w-1/3 h-[4px] bg-black mx-auto"></div>
                 <img src={selfImage} className=" selfImage aspect-[9/10] object-cover" alt="image" />
                 <div className="border w-1/3 h-[4px] bg-black mx-auto"></div>

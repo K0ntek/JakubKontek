@@ -2,23 +2,9 @@ import React from 'react'
 import {  BsFacebook, BsGithub } from 'react-icons/bs'
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import { socials } from './Contact';
 
 const Footer = () => {
-
-    const socials = [
-        { 
-            icon: <BsFacebook />,
-            link: 'https://www.facebook.com/profile.php?id=100009894456441'
-        },
-        { 
-            icon: <BsGithub />,
-            link: 'https://github.com/k0ntek'
-        },
-        { 
-            icon: <FaLinkedinIn />,
-            link: 'https://www.linkedin.com/in/jakub-kontek-33909b2a1/'
-        },
-    ]
 
     const navElements = [
         {
@@ -72,7 +58,7 @@ const Footer = () => {
                 <div className=' flex space-x-3 mx-auto justify-center'>
                     {socials.map((socialElement, i)=>{
                         return(
-                            <p key={i} className=' text-2xl text-black hover:text-[#c2703e] transition-all duration-150'>{socialElement.icon}</p>
+                            <a href={socialElement.link} key={i} className=' text-2xl text-black hover:text-[#c2703e] transition-all duration-150'>{socialElement.icon}</a>
                         )
                     })}
                 </div>

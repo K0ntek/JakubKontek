@@ -23,6 +23,9 @@ body {
   /* background-position-y: 200%; */
 }
 
+.toggledIcon .line{
+  transition: all .5s;
+}
 
  .toggledIcon .line1{
   transform: rotate(45deg);
@@ -211,6 +214,6 @@ background: #dedede;
 }
 
 .aboutContent{
-  background: radial-gradient(rgba(255,131,42,.5), transparent, transparent, transparent);
+  background: radial-gradient(rgb(255, 200, 149), transparent, transparent, transparent);
 }
 

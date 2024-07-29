@@ -88,7 +88,7 @@ const Projects = () => {
     }, [])
 
     return (
-        <div className=" rounded-[40px] mb-10 projects bg-[#ffffff]" id='projects'>
+        <div className=" rounded-[40px] mb-10 projects bg-[#ffffff] shadow-[0px_0px_30px_0px] shadow-black/10" id='projects'>
             <div className=" py-10">
                 <div className="projectsContainer sm:p-[20px] mx-auto rounded-[30px]">
 
