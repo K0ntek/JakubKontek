@@ -57,7 +57,7 @@ const Header = () => {
                             przyciągających uwagę rolek na Instagramie, ulepszaniu SEO i prowadzeniu kampanii w mediach społecznościowych dla marek. Ożywmy Twoją markę!
                         </p>
 
-                <div className="flex gap-4 mt-5 justify-center lg:justify-start">
+                <div className="sm:flex sm:gap-4 mt-5 justify-center lg:justify-start">
                     <div className="buttonWrapper">
                         <Link to="about" spy={true} smooth={true}><button className=" bg-gradient-to-tr from-[rgb(255,161,94)] to-[rgb(255,106,0)] border-[1px] border-transparent text-black font-[500] px-2 py-3 rounded-xl text-lg font-inter transition-all duration-200 hover:tracking-wider">SPRAWDŹ WIĘCEJ</button></Link>
                     </div>
