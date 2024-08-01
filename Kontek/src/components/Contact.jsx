@@ -105,7 +105,7 @@ const Contact = ({option, price}) => {
             </div>
             </div>
 
-      <div className=' bg-white rounded-[40px] sm:p-10 shadow-[0px_0px_20px_0px] shadow-black/10'>
+      <div className=' bg-white rounded-[40px] p-5 sm:p-10 shadow-[0px_0px_20px_0px] shadow-black/10'>
           <div className=' relative top-[50%] translate-y-[-50%]'>
             <div className=" mb-6">
             <h2 className=' font-montserrat text-xl font-[600] tracking-tight
