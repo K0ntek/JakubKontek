@@ -11,7 +11,7 @@ import lgthnk from '/lgthnk.png'
 import carpentry from '/carpentryImage.png'
 import homesell from '/homesellBrzysky.png'
 import uiConcept from '/uiConcept.png'
-
+import examplneLanding from '/examplneLanding.png'
 
 const Projects = () => {
     const projectNav = [
@@ -28,7 +28,16 @@ const Projects = () => {
             img: uiConcept,
             link: 'https://designconcept.onrender.com',
             title: 'Design concept',
-            desc: 'w trakcie budowy',
+            desc: '',
+            secondary: '#ff9352',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },
+        {
+            img: examplneLanding,
+            link: 'https://designconpect2.onrender.com',
+            title: 'Design concept',
+            desc: '',
             secondary: '#ff9352',
             shadow: '0px 0px 20px #15633f',
             id: ""
