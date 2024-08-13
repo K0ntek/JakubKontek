@@ -24,9 +24,9 @@ const Projects = () => {
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
-        {
-            img: uiConcept,
-            link: 'https://designconcept.onrender.com',
+         {
+            img: examplneLanding,
+            link: 'https://designconpect2.onrender.com',
             title: 'Design concept',
             desc: '',
             secondary: '#ff9352',
@@ -34,8 +34,8 @@ const Projects = () => {
             id: ""
         },
         {
-            img: examplneLanding,
-            link: 'https://designconpect2.onrender.com',
+            img: uiConcept,
+            link: 'https://designconcept.onrender.com',
             title: 'Design concept',
             desc: '',
             secondary: '#ff9352',
