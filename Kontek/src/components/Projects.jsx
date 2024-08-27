@@ -12,6 +12,7 @@ import carpentry from '/carpentryImage.png'
 import homesell from '/homesellBrzysky.png'
 import uiConcept from '/uiConcept.png'
 import examplneLanding from '/examplneLanding.png'
+import srogow from '/srogow.png'
 
 const Projects = () => {
     const projectNav = [
@@ -20,6 +21,15 @@ const Projects = () => {
             link: 'https://project-z4xl.onrender.com/',
             title: 'LGTHNK',
             desc: 'w trakcie budowy',
+            secondary: '#ff9352',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },
+        {
+            img: srogow,
+            link: 'https://srogowgorny.onrender.com',
+            title: 'Srogów Górny- nieruchomość',
+            desc: '',
             secondary: '#ff9352',
             shadow: '0px 0px 20px #15633f',
             id: ""
