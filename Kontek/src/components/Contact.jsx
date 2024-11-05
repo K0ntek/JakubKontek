@@ -68,9 +68,9 @@ const Contact = ({option, price}) => {
     }
 
   return (
-    <div className=' my-7 grid md:grid-cols-2 pb-10 gap-1 mr-3 min-h-screen' id='contact'>
+    <div className=' my-7 grid md:grid-cols-2 pb-10 gap-5 mr-3 min-h-screen' id='contact'>
 
-    <div className=' w-full lg:max-w-[800px] lg:w-full mx-auto bg-gradient-to-tr from-[#bd7d60] to-[#d18c6d] rounded-[40px] shadow-[0px_0px_20px_0px] shadow-black/30'>
+    <div className=' max-w-[800px] lg:w-full mx-auto bg-gradient-to-tr from-[#bd7d60] to-[#d18c6d] rounded-[40px] shadow-[0px_0px_20px_0px] shadow-black/30'>
             <div className='relative top-[50%] translate-y-[-50%] mx-auto max-w-[500px] p-5 lg:p-0'>
                 <div className=' space-y-3 font-montserrat font-[500]'>
                 <h1 className=' font-montserrat text-3xl sm:text-5xl font-[600] mt-1 mb-6'>Stwórzmy razem coś fajnego!</h1>
