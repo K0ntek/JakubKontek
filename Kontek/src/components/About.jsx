@@ -73,7 +73,7 @@ const About = () => {
                                     </div>
                                 </div>
 
-                                <div className=" overflow-hidden rounded-3xl relative group shadow-[0px_0px_20px_0px] shadow-black/50">
+                                <div className=" overflow-hidden rounded-3xl relative group shadow-[0px_0px_10px_0px] shadow-black/30">
                                     <a href="https://furnify.onrender.com">
                                         <img src={furnify} alt="image2"  className=" w-full h-full object-cover rounded-3xl "/>
                                         <div className="absolute w-full h-full bg-black/30 top-0 right-0 group-hover:bg-black/80 transition-all duration-150"></div>
