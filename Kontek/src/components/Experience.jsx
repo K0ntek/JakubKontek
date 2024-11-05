@@ -50,7 +50,7 @@ const Experience = () => {
                     </div>
                 </div>
 
-                <Animation />
+                {/* <Animation /> */}
                 {/* <HorizontalBlocks className=" absolute right-0"/> */}
 
             </div>

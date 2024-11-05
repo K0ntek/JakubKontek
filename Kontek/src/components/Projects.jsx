@@ -13,6 +13,7 @@ import homesell from '/homesellBrzysky.png'
 import uiConcept from '/uiConcept.png'
 import examplneLanding from '/examplneLanding.png'
 import srogow from '/srogow.png'
+import furnify from '/furnify.png'
 
 const Projects = () => {
     const projectNav = [
@@ -20,6 +21,15 @@ const Projects = () => {
             img: lgthnk,
             link: 'https://project-z4xl.onrender.com/',
             title: 'LGTHNK',
+            desc: 'w trakcie budowy',
+            secondary: '#ff9352',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },
+        {
+            img: furnify,
+            link: 'https://furnify.onrender.com',
+            title: 'Furnify',
             desc: 'w trakcie budowy',
             secondary: '#ff9352',
             shadow: '0px 0px 20px #15633f',
@@ -113,10 +123,9 @@ const Projects = () => {
 
                             <div className="w-fit ml-10 projectTitle pb-8 sm:pb-0">
                                 <h2 className=' font-montserrat text-xl font-[600] tracking-tight
-                                    bg-gradient-to-r from-[rgb(255,149,73)] to-[rgb(208,89,91)]
-                                    inline-block text-transparent bg-clip-text'>PROJEKTY</h2>
+                                    text-[#B17457]'>PROJEKTY</h2>
                                 
-                                <h1 className=" text-2xl sm:text-4xl lg:text-6xl font-montserrat mb-10 text-transparent bg-clip-text bg-gradient-to-r from-[#111] to-[#000000] font-[600] tracking-[2px]">MOJE PROJEKTY</h1>
+                                <h1 className=" text-2xl sm:text-4xl lg:text-6xl font-montserrat mb-10 text-transparent bg-clip-text bg-gradient-to-r from-[#111] to-[#000000] font-[500] tracking-[-2px]">MOJE PROJEKTY</h1>
                             </div>
 
                     <div className="gd-carousel-wrapper">
@@ -131,37 +140,22 @@ const Projects = () => {
                       className="relative gd-carousel">
                         {projectNav.map((element, i) => {
                                 return (
-                                    <a href={element.link} key={i}>
-                                        <div className={` project group rounded-3xl relative overflow-hidden sm:w-[98%] mx-auto transition-all duration-500`}>
-                                                <div style={{
-                                                    background: `linear-gradient(80deg, rgba(0,0,0,.7), rgba(0,0,0,.1)),url(${element.img})`,
-                                                    aspectRatio: '16/9',
-                                                    backgroundRepeat: 'no-repeat',
-                                                    backgroundSize: 'cover',
-                                                }} className="group-hover:scale-110 transition-all duration-300"></div>
-
-                                                    <div className="group-hover:bg-black/80 w-full h-full z-40 transition-all absolute top-0 left-0">
-                                                        <div className=" absolute bottom-10 left-6 -space-y-3">
-
-                                                        <div className="flex gap-1">
-                                                            <AiOutlineAntDesign className=" mt-[14px] text-[rgb(112,66,146)]"/> 
-                                                            <p className="tracking-wide group-hover:tracking-widest transition-all duration-150 my-3 text-[14px] font-montserrat font-[600] bg-gradient-to-r from-[rgb(156,96,203)] via-[rgb(208,89,91)] to-[rgb(212,130,71)]
-                                                                 inline-block text-transparent bg-clip-text">UI DESIGN</p>
-                                                        </div>
-
-                                                            <div className="w-fit">
-                                                                <h2 className="text-lg md:text-xl xl:text-3xl font-montserrat font-[500] tracking-wide text-[rgb(207,207,207)]">{element.title}</h2>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div className="absolute bottom-10 right-6 transition-all duration-200 flex gap-1">
-                                                            <div className="w-fit overflow-hidden">
-                                                                <p className="text-white font-montserrat font-[400] tracking-widest text-[10px] relative left-[100%] group-hover:left-0 transition-all duration-300">ZOBACZ</p>
-                                                            </div>
-                                                            <MdArrowOutward className=" text-white group-hover:text-[rgb(255,38,42)] text-xl" />
-                                                        </div>
+                                    <a href={element.link}>
+                                        <div className=" px-2 group space-y-2">
+                                            <div className="relative">
+                                                 <img src={element.img} alt={element.title + 'image'} className=" rounded-3xl aspect-video object-cover" />
+                                                 <div className="w-full h-full bg-black/10 absolute top-0 left-0 rounded-3xl  group-hover:bg-black/70 transition-all duration-150"></div>
+                                                 <div className="absolute bottom-5 group right-6 transition-all duration-200 flex gap-1">
+                                                    <div className="w-fit overflow-hidden">
+                                                        <p className="text-white font-montserrat font-[400] tracking-widest text-[10px] relative left-[100%] group-hover:left-0 transition-all duration-300">ZOBACZ</p>
                                                     </div>
+                                                    <MdArrowOutward className=" text-white group-hover:text-[#B17457] text-xl" />
+                                                </div>
+                                            </div>
+
+                                            <h1 className=" font-montserrat font-[500] text-xl">{element.title}</h1>
+                                            <h2 className=" font-inter bg-gradient-to-r from-gray-500 to-[#0f0f0f]
+                                                     inline-block text-transparent bg-clip-text font-[600] relative -top-2">UI DESIGN</h2>
                                         </div>
                                     </a>
                                 )

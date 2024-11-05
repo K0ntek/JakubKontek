@@ -68,9 +68,9 @@ const Contact = ({option, price}) => {
     }
 
   return (
-    <div className=' my-7 grid md:grid-cols-2 py-10 gap-5 mr-3 min-h-screen' id='contact'>
+    <div className=' my-7 grid md:grid-cols-2 pb-10 gap-1 mr-3 min-h-screen' id='contact'>
 
-    <div className=' w-full lg:max-w-[800px] lg:w-full mx-auto bg-gradient-to-tr from-[rgba(255,130,41,0.97)] to-[rgba(212,43,46,0.75)] rounded-[40px] shadow-[0px_0px_20px_0px] shadow-black/30'>
+    <div className=' w-full lg:max-w-[800px] lg:w-full mx-auto bg-gradient-to-tr from-[#B17457] to-[#b97f64] rounded-[40px] shadow-[0px_0px_20px_0px] shadow-black/30'>
             <div className='relative top-[50%] translate-y-[-50%] mx-auto max-w-[500px] p-5 lg:p-0'>
                 <div className=' space-y-3 font-montserrat font-[500]'>
                 <h1 className=' font-montserrat text-3xl sm:text-5xl font-[600] mt-1 mb-6'>Stwórzmy razem coś fajnego!</h1>
@@ -109,8 +109,7 @@ const Contact = ({option, price}) => {
           <div className=' relative top-[50%] translate-y-[-50%]'>
             <div className=" mb-6">
             <h2 className=' font-montserrat text-xl font-[600] tracking-tight
-                                      bg-gradient-to-r from-[rgb(255,149,73)] to-[rgb(208,89,91)]
-                                      inline-block text-transparent bg-clip-text'>KONTAKT</h2>
+                                      text-[#B17457]'>KONTAKT</h2>
               <h1 className=' text-3xl sm:text-5xl font-montserrat font-[700] text-black'>NAPISZ DO MNIE!</h1>
             </div>
 
@@ -118,8 +117,8 @@ const Contact = ({option, price}) => {
                   <form onSubmit={handleSubmit} className='space-y-5'>
 
                     <div>
-                      <h1 className=' font-montserrat font-[600] text-md'>Wybrana opcja: <span className="bg-gradient-to-r from-[rgb(255,149,73)] to-[rgb(208,89,91)] inline-block text-transparent bg-clip-text uppercase"> {option} </span></h1>
-                      <h1 className=' font-montserrat font-[600] text-md'>Cena: <span className="bg-gradient-to-r from-[rgb(255,149,73)] to-[rgb(208,89,91)] inline-block text-transparent bg-clip-text"> {price} </span></h1>
+                      <h1 className=' font-montserrat font-[600] text-md'>Wybrana opcja: <span className="bg-gradient-to-r from-[#B17457] to-[#b97f64] inline-block text-transparent bg-clip-text uppercase"> {option} </span></h1>
+                      <h1 className=' font-montserrat font-[600] text-md'>Cena: <span className="bg-gradient-to-r from-[#B17457] to-[#b97f64] inline-block text-transparent bg-clip-text"> {price} </span></h1>
                     </div>
 
                   <div className=''>

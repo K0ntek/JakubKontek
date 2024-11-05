@@ -7,12 +7,13 @@
 
 * {
   font-family: Arial, Helvetica, sans-serif;
+  cursor: default;
 }
 
-*::selection {
+/* *::selection {
   background-color: #b1683b;
   color: white;
-}
+} */
 
 body {
   margin: auto;
@@ -113,7 +114,7 @@ body {
 }
 
 .navElement .active {
-  color: rgb(255,149,73);
+  color: #B17457;
   border-bottom: 1px solid black;
 }
 
@@ -212,8 +213,8 @@ background: #dedede;
     height: 40px;
   }
 }
-
+/* 
 .aboutContent{
-  background: radial-gradient(rgb(255, 200, 149), transparent, transparent, transparent);
-}
+  background: radial-gradient(rgb(184, 184, 184), transparent, transparent, transparent);
+} */
 

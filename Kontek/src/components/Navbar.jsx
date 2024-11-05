@@ -51,13 +51,10 @@ const Navbar = () => {
     return (
        <div className=" relative mx-auto">
 
-            <div className=" bg-white py-2 h-[65px] z-[99] fixed top-0 w-full">
-                <div className=" relative mt-1 sm:left-8 text-center sm:text-start w-fit mx-auto sm:mx-0 cursor-pointer">
+            <div className=" bg-white/70 backdrop-blur-[5px] py-2 h-[65px] z-[99] fixed top-0 w-full">
+              <div className="mt-2 sm:ml-8 text-center sm:text-start w-fit mx-auto sm:mx-0 cursor-pointer">
                         <Link to="home" spy={true} smooth={true} >
-                            <div className=" -space-y-1 w-fit h-fit">
-                            <h1 className=" font-montserrat font-[600] text-lg">JAKUB KONTEK</h1>
-                            <h2 className=" font-montserrat font-[600] text-[9px] text-[rgb(255,106,0)]">WEB DEVELOPER & DESIGNER</h2>
-                            </div>
+                            <h1 className=" font-montserrat font-[600] text-lg cursor-pointer">JAKUB KONTEK</h1>
                         </Link>
                 </div>
         </div>
@@ -71,9 +68,9 @@ const Navbar = () => {
        <ul className={`${active} sm:flex fixed top-[-300px] pt-[65px] sm:top-5 py-6 sm:py-0 sm:right-8 gap-4 space-y-2 z-[98] sm:z-[99] sm:space-y-0 transition-all duration-500 justify-end bg-[#fdfdfd] w-full sm:bg-transparent`}>
                         {navElements.map((element, i) => {
                             return (
-                                <li key={i} className="navElement text-black cursor-pointer rounded-full text-md group text-center transition-all duration-150 hover:text-[rgb(255,149,73)]">
-                                    <Link key={i} to={element.link} spy={true} smooth={true} ma className=" font-gruppo font-bold">
-                                        <p className="">{element.name}</p>
+                                <li key={i} className="navElement text-black cursor-pointer rounded-full text-md group text-center transition-all duration-150 hover:text-[#B17457]">
+                                    <Link key={i} to={element.link} spy={true} smooth={true} ma className=" font-[600]">
+                                        <p className=" font-montserrat">{element.name}</p>
                                     </Link>
                                 </li>
                             )

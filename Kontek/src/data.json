@@ -4,6 +4,7 @@
          "offer": "Strona internetowa z formularzem kontaktowym",
          "price": "1500",
         "subheading": "Web design",
+        "color": "FAF7F0",
         "month": "",
         "slash": "",
         "pros": [
@@ -32,6 +33,7 @@
          "offer": "Prowadzenie Twoich social media",
          "price": 60,
         "subheading": "Marketing",
+        "color": "D8D2C2",
         "month": "post",
         "slash": "/",
         "pros": [
@@ -63,6 +65,7 @@
          "offer": " Strona internetowa + prowadzenie Twoich social media",
          "price": "od 1450",
         "subheading": "Super oferta",
+        "color": "cc957a",
         "month": "",
         "slash": "",
         "pros": [
@@ -82,6 +85,7 @@
          "offer": "Stworzenie rolki na Instagrama / Tiktoka",
          "price": 150,
         "subheading": "Marketing",
+        "color": "e8e5d5",
         "month": "rolka",
         "slash": "/",
         "pros": [
@@ -102,6 +106,7 @@
          "offer": "Film promocyjny",
          "price": 1500,
         "subheading": "Marketing",
+        "color": "AF8F6F",
         "month": "",
         "slash": "",
         "pros": [
