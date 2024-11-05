@@ -43,7 +43,7 @@ const About = () => {
 
                             <div className=" grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3">
                                 <div className=" grid gap-3">
-                                    <div className=" overflow-hidden rounded-3xl relative group shadow-[0px_0px_20px_0px] shadow-black/50">
+                                    <div className=" overflow-hidden rounded-3xl relative group shadow-[0px_0px_10px_0px] shadow-black/20">
                                         <a href="https://designconpect2.onrender.com">
                                             <img src={examplneLanding} alt="image2"  className=" w-full h-full object-cover rounded-3xl "/>
                                             <div className="absolute w-full h-full bg-black/30 top-0 right-0 group-hover:bg-black/80 transition-all duration-150"></div>
@@ -57,7 +57,7 @@ const About = () => {
                                                 </div>  
                                         </a>
                                     </div>
-                                    <div className=" overflow-hidden rounded-3xl relative group shadow-[0px_0px_20px_0px] shadow-black/50">
+                                    <div className=" overflow-hidden rounded-3xl relative group shadow-[0px_0px_10px_0px] shadow-black/20">
                                         <a href="https://designconcept.onrender.com">
                                             <img src={uiConcept} alt=" image1" className=" w-full h-full object-cover rounded-3xl "/>
                                             <div className="absolute w-full h-full bg-black/30 top-0 right-0 group-hover:bg-black/80 transition-all duration-150"></div>
@@ -73,7 +73,7 @@ const About = () => {
                                     </div>
                                 </div>
 
-                                <div className=" overflow-hidden rounded-3xl relative group shadow-[0px_0px_10px_0px] shadow-black/30">
+                                <div className=" overflow-hidden rounded-3xl relative group shadow-[0px_0px_10px_0px] shadow-black/20">
                                     <a href="https://furnify.onrender.com">
                                         <img src={furnify} alt="image2"  className=" w-full h-full object-cover rounded-3xl "/>
                                         <div className="absolute w-full h-full bg-black/30 top-0 right-0 group-hover:bg-black/80 transition-all duration-150"></div>
