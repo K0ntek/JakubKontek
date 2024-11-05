@@ -149,7 +149,7 @@ const Projects = () => {
                                            </div>
 
                                             <div className="relative">
-                                                 <img src={element.img} alt={element.title + 'image'} className=" rounded-3xl aspect-video object-cover" />
+                                                 <img src={element.img} alt={element.title + 'image'} className=" rounded-3xl aspect-video object-cover shadow-[0px_0px_20px_0px] shadow-black/50" />
                                                  <div className="w-full h-full bg-black/10 absolute top-0 left-0 rounded-3xl  group-hover:bg-black/70 transition-all duration-150"></div>
                                                  <div className="absolute bottom-5 group right-6 transition-all duration-200 flex gap-1">
                                                     <div className="w-fit overflow-hidden">
