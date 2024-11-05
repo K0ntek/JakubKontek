@@ -10,6 +10,7 @@ import Contact from './components/Contact'
 import Pricing from './components/Pricing'
 import AboutTriangles from './components/AboutTriangles'
 import pricingOffer from './data.json'
+import waves from '../public/waves.png'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
   const [price, setPrice] = useState('')
 
   return (
-    <div>
+    <div className=''>
+      <div className=" wavesBg w-full h-screen opacity-5 fixed z-[-1] top-0 left-0"><img src={waves} alt="" className=' w-full h-screen'/></div>
         <Navbar/>
       {/* <Blocks/> */}
       <Header/>

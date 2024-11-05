@@ -142,6 +142,12 @@ const Projects = () => {
                                 return (
                                     <a href={element.link}>
                                         <div className=" px-2 group space-y-2">
+                                            
+                                           <div className="bg-black px-2 py-1 rounded-full w-fit ml-5">
+                                           <h2 className=" font-inter bg-gradient-to-r from-[#fff] to-[#eeeeee]
+                                                     inline-block text-transparent bg-clip-text font-[600] text-[12px]">UI DESIGN</h2>
+                                           </div>
+
                                             <div className="relative">
                                                  <img src={element.img} alt={element.title + 'image'} className=" rounded-3xl aspect-video object-cover" />
                                                  <div className="w-full h-full bg-black/10 absolute top-0 left-0 rounded-3xl  group-hover:bg-black/70 transition-all duration-150"></div>
@@ -152,10 +158,7 @@ const Projects = () => {
                                                     <MdArrowOutward className=" text-white group-hover:text-[#B17457] text-xl" />
                                                 </div>
                                             </div>
-
-                                            <h1 className=" font-montserrat font-[500] text-xl">{element.title}</h1>
-                                            <h2 className=" font-inter bg-gradient-to-r from-gray-500 to-[#0f0f0f]
-                                                     inline-block text-transparent bg-clip-text font-[600] relative -top-2">UI DESIGN</h2>
+                                            <h1 className=" font-montserrat font-[500] text-xl relative -top-1">{element.title}</h1>
                                         </div>
                                     </a>
                                 )

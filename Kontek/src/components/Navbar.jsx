@@ -54,7 +54,7 @@ const Navbar = () => {
             <div className=" bg-white/70 backdrop-blur-[5px] py-2 h-[65px] z-[99] fixed top-0 w-full">
               <div className="mt-2 sm:ml-8 text-center sm:text-start w-fit mx-auto sm:mx-0 cursor-pointer">
                         <Link to="home" spy={true} smooth={true} >
-                            <h1 className=" font-montserrat font-[600] text-lg cursor-pointer">JAKUB KONTEK</h1>
+                            <h1 className=" font-montserrat font-[600] text-lg cursor-pointer h-15">JAKUB KONTEK</h1>
                         </Link>
                 </div>
         </div>
