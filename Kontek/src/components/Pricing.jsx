@@ -61,7 +61,7 @@ const Pricing = ({chooseOption, setOption, setPrice}) => {
         <div className=' mx-auto'>
             <div className="w-fit mx-auto">
                 <div className="w-1/3 bg-gradient-to-r from-[#e4e4e4] to-[#0f0f0f] h-[2px] mx-auto mb-2"></div>
-                <h2 className=' font-montserrat text-center text-4xl ml-10 md:text-6xl font-[500] text-[#2b2b2b]'>MOJA OFERTA</h2>
+                <h2 className=' font-montserrat text-center text-4xl md:text-6xl font-[500] text-[#2b2b2b]'>MOJA OFERTA</h2>
                 <p className=' text-center font-montserrat font-[500] text-lg'>Wybierz jedną z interesujących cię ofert i ciesz się z owocnej współpracy!</p>
             </div>
             <div className="bg-[#0a0a0a] rounded-3xl p-4 flex flex-wrap mx-auto justify-center gap-5 mt-10">
