@@ -38,7 +38,7 @@ function App() {
                            
                           <div className="grid lg:grid-cols-[2fr_1fr] mt-5 lg:gap-10 lg:mt-10">
                             <div className="bg-[#f0f0f0] p-10 rounded-3xl shadow-[0px_0px_10px_0px] shadow-black/20 space-y-9">
-                              <p className=" font-montserrat text-lg md:text-2xl text-justify font-[500] lg:mt-5">
+                              <p className="  font-montserrat text-lg md:text-2xl text-justify font-[500]">
                                   Każdy projekt dostosowuję do Twoich unikalnych potrzeb i celów, co sprawia, że otrzymujesz rozwiązania
                                   idealnie odzwierciedlające Twoją wizję. Gwarantuję wysoką jakość usługi, terminowość
                                   i pełne zaangażowanie w realizację Twoich projektów.</p>
@@ -51,7 +51,7 @@ function App() {
                                <div className="grid lg:grid-cols-[1fr_2fr] mt-5 lg:gap-10 lg:mt-10">
                                 <div></div>
                                     <div className="bg-[#f0f0f0] p-10 rounded-3xl shadow-[0px_0px_10px_0px] shadow-black/20 space-y-9">
-                                      <p className=" font-inter text-lg md:text-2xl text-justify font-[500] lg:mt-5 tracking-[-0.5px] leading-[30px]">
+                                      <p className="  font-montserrat text-lg md:text-2xl text-justify font-[500]">
                                       Tworzę angażujące treści na Instagram, które przyciągną uwagę oraz
                                     zwiększą zaangażowanie Twoich klientów. Współpracując ze mną, oszczędzasz czas, ponieważ
                                     przejmuję kompleksową obsługę Twojej obecności online, pozwalając Ci skoncentrować się na rozwoju biznesu.</p>
@@ -63,7 +63,7 @@ function App() {
 
                             <div className="grid lg:grid-cols-[2fr_1fr] mt-5 lg:gap-10 lg:mt-10">
                               <div className="bg-[#f0f0f0] p-10 rounded-3xl shadow-[0px_0px_10px_0px] shadow-black/20 space-y-9">
-                                <p className=" font-montserrat text-lg md:text-2xl text-justify font-[500] lg:mt-5">
+                                <p className=" font-montserrat text-lg md:text-2xl text-justify font-[500]">
                                 Oferuję stałe wsparcie i doradztwo na każdym etapie współpracy, dostosowując działania do zmieniających się potrzeb. Śledzę najnowsze trendy
                                 , aby Twoja firma była zawsze na bieżąco i konkurencyjna w dynamicznym świecie cyfrowym.</p>
 
